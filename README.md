@@ -11,7 +11,7 @@ This repository documents my journey of learning React.js (Chai aur React series
 | **Counter App** | `03counter` | Understanding `useState` hook and UI updates. |
 | **Background Changer** | `04bgChanger` | Event handling and State management. |
 | **Password Generator** | `05passwordGenerator` | `useEffect`, `useCallback`, `useRef`, and clipboard interactions. |
-| **Currency Converter** | `06currencyConverter` | Custom Hooks (`useCurrencyInfo`), API integration, and complex State handling. |
+| **React Router** | `07routerproject` | Client-side routing (react-router-dom), Data Loading (`useLoaderData`), Nested Routes (Outlet), and API optimization. |
 | **Custom React** | `Custom-react` | Understanding how React works under the hood. |
 
 ## 🛠️ Tech Stack
