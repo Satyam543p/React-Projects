@@ -16,6 +16,7 @@ This repository documents my journey of learning React.js (Chai aur React series
 | **Mini Context** | `08miniContext` | `createContext`, `useContext`, Creating a global Provider, and solving the "Prop Drilling" problem. |
 | **Theme Switcher** | `09themeChanger` | Advanced Context API usage, managing Dark/Light mode state, and configuring Tailwind CSS (darkMode: "class") for dynamic theming. | 
 | **Todo Local** | `10todoContextLocal` | Full CRUD functionality, Local Storage persistence (JSON.parse/stringify), useEffect optimization, and handling React Strict Mode race conditions. |
+| **Redux Todo** | `11todoReduxToolkit` | State management using Redux Toolkit (Store `configureStore`, Slices `createSlice`), data persistence via Local Storage, and handling state updates with `useDispatch` & `useSelector` hooks.|
 | **Custom React** | `Custom-react` | Understanding how React works under the hood. |
 
 ## 🛠️ Tech Stack
