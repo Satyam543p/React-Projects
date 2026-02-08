@@ -17,9 +17,13 @@ This repository documents my journey of learning React.js (Chai aur React series
 | **Theme Switcher** | `09themeChanger` | Advanced Context API usage, managing Dark/Light mode state, and configuring Tailwind CSS (darkMode: "class") for dynamic theming. | 
 | **Todo Local** | `10todoContextLocal` | Full CRUD functionality, Local Storage persistence (JSON.parse/stringify), useEffect optimization, and handling React Strict Mode race conditions. |
 | **Redux Todo** | `11todoReduxToolkit` | State management using Redux Toolkit (Store `configureStore`, Slices `createSlice`), data persistence via Local Storage, and handling state updates with `useDispatch` & `useSelector` hooks.|
+| **MegaBlog Appwrite** | `12megablogAppwrite` | A production-grade Full Stack Blog application powered by Appwrite (Auth, Database, Storage). Features global state management with Redux Toolkit, complex form handling via React Hook Form, rich text editing with TinyMCE, and a responsive UI using Tailwind CSS. |
 | **Custom React** | `Custom-react` | Understanding how React works under the hood. |
 
 ## 🛠️ Tech Stack
-* **Library:** React.js (Vite)
+
+* **Core:** React.js (Vite), JavaScript (ES6+)
+* **State Management:** Redux Toolkit, Context API
+* **Backend as a Service:** Appwrite Cloud
 * **Styling:** Tailwind CSS
 * **Tools:** Git, GitHub

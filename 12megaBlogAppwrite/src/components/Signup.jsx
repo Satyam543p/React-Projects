@@ -31,7 +31,7 @@ function Signup() {
     }
 
   return (
-    <div>
+    <div  className='p-4 bg-white shadow rounded-lg max-w-md mx-auto my-10'>
         <div className='text-center my-4 text-4xl'>
             📰
         </div>

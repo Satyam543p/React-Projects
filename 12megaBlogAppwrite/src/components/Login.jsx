@@ -31,7 +31,7 @@ function Login() {
     }
 
   return (
-    <div>
+    <div className='p-4 bg-white shadow rounded-lg max-w-md mx-auto my-10'>
         <div className='text-center my-4 text-4xl'>
             📰
         </div>
@@ -52,7 +52,7 @@ function Login() {
         </p>)}
 
         <form onSubmit={handleSubmit(login)}>
-            <div className='space-y-5'>
+            <div className='space-y-5 mb-15'>
              <Input 
                  label='Email'
                  type="email" 
@@ -71,7 +71,7 @@ function Login() {
                         required:true,
                     })}    
                 />    
-                <Button type='submit' className='w-full'>
+                <Button type='submit' className='w-full mb-3'>
                     Sign in
                 </Button>
              </div>

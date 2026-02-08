@@ -27,7 +27,7 @@ function MyPosts() {
     if (!userData) return <div>Loading...</div>;
 
     return (
-        <div className='w-full py-8'>
+        <div className='w-full min-h-[600px] py-8'>
             <Container>
                 
                 <div className='flex flex-wrap'>

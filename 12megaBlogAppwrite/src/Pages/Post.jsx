@@ -34,38 +34,44 @@ export default function Post() {
 
     return post ? (
         <div className="py-8">
-            <Container>
-                {/* 🖼️ IMAGE SECTION */}
-                <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
-                    <img
-                        src={appwriteService.getFilePreview(post.featuredImage)}
-                        alt={post.title}
-                        className="rounded-xl max-h-80 w-auto shadow-lg" // ✅ Fixes Image Size
-                    />
+    <Container>
+        
+        <div className="w-full max-w-5xl mx-auto border rounded-xl p-4 md:p-8 shadow-lg bg-[#1a252b] text-amber-50">
+            
+            
+            <div className="w-full flex justify-center mb-6 relative border border-gray-700 rounded-xl overflow-hidden bg-gray-900 max-h-[500px]">
+                <img
+                    src={appwriteService.getFilePreview(post.featuredImage)}
+                    alt={post.title}
+                    className="w-full h-auto mt-15 object-contain shadow-lg" 
+                />
 
-                    {/* 🔘 BUTTON SECTION */}
-                    {isAuthor && (
-                        <div className="absolute right-6 top-6 flex gap-3"> {/* ✅ Fixes Squished Buttons */}
-                            <Link to={`/edit-post/${post.$id}`}>
-                                <Button bgColor="bg-green-500" className="mr-3">
-                                    Edit
-                                </Button>
-                            </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost}>
-                                Delete
+                
+                {isAuthor && (
+                    <div className="absolute right-4 top-4 flex gap-2"> 
+                        <Link to={`/edit-post/${post.$id}`}>
+                            <Button bgColor="bg-green-500" className="mr-3 p-2 hover:bg-green-600 shadow-md">
+                                Edit
                             </Button>
-                        </div>
-                    )}
-                </div>
+                        </Link>
+                        <Button bgColor="bg-red-500" className="hover:bg-red-600 p-2 shadow-md" onClick={deletePost}>
+                            Delete
+                        </Button>
+                    </div>
+                )}
+            </div>
 
-                {/* 📝 CONTENT SECTION */}
-                <div className="w-full mb-6">
-                    <h1 className="text-2xl font-bold">{post.title}</h1>
-                </div>
-                <div className="browser-css">
-                    {parse(post.content)}
-                </div>
-            </Container>
+            
+            <div className="w-full mb-6 border-b border-gray-600 pb-4">
+                <h1 className="text-3xl font-bold">{post.title}</h1>
+            </div>
+
+            
+            <div className="browser-css text-gray-300">
+                {parse(post.content)}
+            </div>
         </div>
+    </Container>
+</div>
     ) : null;
 }

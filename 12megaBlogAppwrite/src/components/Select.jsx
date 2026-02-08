@@ -10,7 +10,7 @@ function Select({
 
     const id=useId();
   return (
-    <div className='px-4 py-6 w-full'>
+    <div className='py-6 w-full'>
         {label&&(
             <label className='inline-block mb-4 ' htmlFor={id}>
                 {label}
